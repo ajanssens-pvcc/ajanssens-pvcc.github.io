@@ -69,6 +69,16 @@ def display_results():
     print('Note: PVCC Fee Rates: https://www.pvcc.edu/tuition-and-fees')
 
 # Call on main program to execute
+def main():
+    another_student = True
+    while another_student:
+        get_user_data()
+        perform_calculations()
+        display_results()
+        yesno = input("\nWould you like to calculate tuition and fees for another student (Y/N): ")
+        if yesno.upper() !="Y":
+            another_student = False
+
 main()
 
 
